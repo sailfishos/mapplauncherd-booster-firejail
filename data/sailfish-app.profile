@@ -33,7 +33,7 @@ dbus-system.talk com.nokia.NonGraphicFeedback1.Backend
 dbus-user filter
 dbus-user.talk ca.desrt.dconf
 dbus-user.talk com.nokia.profiled
-dbus-user.talk org.malitt.server
+dbus-user.talk org.maliit.server
 dbus-user.talk org.nemo.transferengine
 
 ### environment

@@ -154,7 +154,6 @@ int FirejailBooster::launchProcess()
     }
     else {
         addArg(fullargv, "--protocol=unix,netlink");
-        addArg(fullargv, "--net=none");
     }
 
     // Data dirs
