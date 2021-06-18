@@ -3,17 +3,17 @@ Summary:    Firejail application launcher
 Version:    0.0.2
 Release:    1
 License:    LGPLv2.1
-URL:        https://github.org/jolla/mapplauncherd-booster-firejail
+URL:        https://github.org/sailfishos/mapplauncherd-booster-firejail
 Source0:    %{name}-%{version}.tar.bz2
 BuildRequires:  pkgconfig
-BuildRequires:  mapplauncherd-devel >= 4.1.0
 BuildRequires:  qt5-qmake
 BuildRequires:  systemd
+BuildRequires:  pkgconfig(applauncherd) >= 4.2.3
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(gmodule-2.0)
 BuildRequires:  pkgconfig(gobject-2.0)
-Requires:  mapplauncherd >= 4.1.0
+Requires:  mapplauncherd >= 4.2.3
 Requires:  systemd-user-session-targets
 Requires:  firejail
 Requires:  xdg-dbus-proxy
@@ -28,10 +28,9 @@ sandbox with optional privileges.
 %build
 %qmake5
 
-make %{?_smp_mflags}
+%make_build
 
 %install
-rm -rf %{buildroot}
 %qmake_install
 
 mkdir -p %{buildroot}%{_userunitdir}/user-session.target.wants || true
