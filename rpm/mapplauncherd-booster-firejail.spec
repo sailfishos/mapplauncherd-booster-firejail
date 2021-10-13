@@ -5,9 +5,8 @@ Release:    1
 License:    LGPLv2.1
 URL:        https://github.org/sailfishos/mapplauncherd-booster-firejail
 Source0:    %{name}-%{version}.tar.bz2
-BuildRequires:  pkgconfig
 BuildRequires:  qt5-qmake
-BuildRequires:  systemd
+BuildRequires:  pkgconfig(systemd)
 BuildRequires:  pkgconfig(applauncherd) >= 4.2.3
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gio-2.0)
