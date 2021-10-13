@@ -1,6 +1,6 @@
 Name:       mapplauncherd-booster-firejail
 Summary:    Firejail application launcher
-Version:    0.0.2
+Version:    0.0.5
 Release:    1
 License:    LGPLv2.1
 URL:        https://github.org/sailfishos/mapplauncherd-booster-firejail
